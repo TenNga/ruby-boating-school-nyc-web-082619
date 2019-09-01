@@ -5,7 +5,7 @@ class Student
   end
   
   def self.all 
-      
+      Boat
   end 
   
   
