@@ -1,9 +1,9 @@
 class BoatingTest
   
-  attr_accessor :student, :boatingTestName, :boatingTestSatus, :instructor
+  attr_accessor :student, :boatingTestName, :boatingTestStatus, :instructor
   @@all = []
   
-  def initialize(student,boatingTestName,boatingTestSatus,instructor)
+  def initialize(student,boatingTestName,boatingTestStatus,instructor)
     @student = student
     @boatingTestName = boatingTestName
     @boatingTestSatus = boatingTestSatus
