@@ -7,7 +7,7 @@ class Instructor
   end
   
   def pass_student(student,boatingTestName)
-    BoatingTest.all.find { |test| test.boatingTestName == boatingTestName && test.student
+    findStudent = BoatingTest.all.find { |test| test.boatingTestName == boatingTestName && test.student == student }
   end
   
   def self.all 
