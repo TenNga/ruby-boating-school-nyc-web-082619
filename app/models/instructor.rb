@@ -24,7 +24,7 @@ class Instructor
     findStudent = BoatingTest.all.find { |test| test.boatingTestName == boatingTestName and test.student == student }
     
     if findStudent
-      findStudent.boatingTestSatus = "failed"
+      findStudent.boatingTestStatus = "failed"
       findStudent
     else 
       BoatingTest.new(student,boatingTestName,"failed",self)
