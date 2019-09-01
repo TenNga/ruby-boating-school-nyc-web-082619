@@ -7,16 +7,33 @@ class Instructor
   end
   
   def pass_student(student,boatingTestName)
+    
     findStudent = BoatingTest.all.find { |test| test.boatingTestName == boatingTestName and test.student == student }
+    
     if findStudent
       findStudent.boatingTestSatus = "passed"
     else
       BoatingTest.new(student,boatingTestName,"passed",self)
     end
+    
+  end
+  
+  def fail_student(student,boatingTestName)
+    
+    findStudent = BoatingTest.all.find { |test| test.boatingTestName == boatingTestName and test.student == student }
+    
+    if findStudent
+      findStudent.boatingTestSatus = "failed"
+    else 
+      BoatingTest.new(student,boatingTestName,"failed",self)
+    end
+    
   end
   
   def self.all 
+    
     BoatingTest.all.map { |test| test.instructor }
+    
   end
   
-end
+end #end of class 
