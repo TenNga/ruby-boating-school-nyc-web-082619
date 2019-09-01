@@ -6,7 +6,7 @@ class BoatingTest
   def initialize(student,boatingTestName,boatingTestStatus,instructor)
     @student = student
     @boatingTestName = boatingTestName
-    @boatingTestSatus = boatingTestSatus
+    @boatingTestStatus = boatingTestStatus
     @instructor = instructor
     @@all << self
   end
