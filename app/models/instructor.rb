@@ -12,6 +12,7 @@ class Instructor
     
     if findStudent
       findStudent.boatingTestSatus = "passed"
+      findStudent
     else
       BoatingTest.new(student,boatingTestName,"passed",self)
     end
