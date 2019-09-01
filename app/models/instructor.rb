@@ -7,7 +7,7 @@ class Instructor
   end
   
   def self.all 
-    BoatingTest
+    BoatingTest.all.map { |test| test.instructor }
   end
   
 end
