@@ -15,7 +15,6 @@ class Student
     allTest = BoatingTest.all.count 
     passes = BoatingTest.all.select { |test| test.boatingTestStatus == "passed" }
     percentage = passes.count.to_f/allTest.to_f * 100
-    binding.pry
     percentage
   end
   
