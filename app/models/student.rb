@@ -13,7 +13,7 @@ class Student
   def grade_percentage
     allTest = BoatingTest.all.count 
     passes = BoatingTest.all.select { |test| test.boatingTestStatus == "passed" }
-    percentage = (passes.count/allTest) * 100
+    percentage = passes.count/allTest * 100
     percentage.to_f 
   end
   
