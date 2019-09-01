@@ -18,7 +18,7 @@ no_crashing = spongebob.add_boating_test("Don't Crash 101", "pending", puff)
 power_steering_failure = patrick.add_boating_test("Power Steering 202", "failed", puff)
 power_steering_pass = patrick.add_boating_test("Power Steering 201", "passed", krabs)
 
-puff.fail_student(spongebob, "dring 101")
+puff.fail_student(spongebob, "dring 101") #will add new BoatingTest with spongebob as student, testname as "dring 101", status "failed"
 
 
 binding.pry
