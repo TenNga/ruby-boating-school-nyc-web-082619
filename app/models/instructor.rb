@@ -11,7 +11,7 @@ class Instructor
     if findStudent
       findStudent
     else
-      
+      BoatingTest.new()
     end
   end
   
